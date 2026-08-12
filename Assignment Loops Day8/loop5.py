@@ -14,8 +14,7 @@ fac = 1
 sum = 0
 for i in range(1,num+1):
    if num%i == 0:
-       
-       sum = sum + 1
+      sum = sum + 1
 print("Factors count = ",sum) 
    
 

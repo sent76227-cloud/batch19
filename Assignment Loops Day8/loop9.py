@@ -25,7 +25,7 @@ length = len(str(num))
 add = 0
 for i in range(0,length) : 
    squ = num ** 2
- 
+
 while squ > 0:  
 
    sum = squ%10

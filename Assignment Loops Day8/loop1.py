@@ -14,7 +14,7 @@ num = int(input("Enter a number: "))
 check = 0
 max = 0 
 leng = len(str(num))
-for i in range(0,leng)
+for i in range(0,leng):
    check = num%10
    if check > max:
        max = check
@@ -26,7 +26,7 @@ print(max)
 while num > 0 :
    check = num%10
    if check > max:
-       max = check
+    max = check
    num = num//10
 
 print(max )'''

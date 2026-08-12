@@ -11,14 +11,11 @@ Smallest Digit = 2 '''
 
 num = int(input("Enter a number: "))
 min = 9
-
-
-
 i = 1
 while num > 0 :
    check = num%10
    if min > check:
-       min = check
+      min = check
    num = num//10
 
 print("Minimum no. is : ",min)
