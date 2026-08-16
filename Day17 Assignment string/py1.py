@@ -17,6 +17,7 @@ while i<length:
 
       if ch == "a" or  ch == "i" or ch == "o" or ch == "e" or ch == "u":
          count = count + 1
-      print(ch,end="")
+         print("vovel ",ch)
       i = i+1
+print()
 print("Total vowels: ",count) 
