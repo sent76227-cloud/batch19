@@ -28,6 +28,8 @@ Requirements:
 - Use two sets.
 - Apply intersection, difference, and union operations.
 '''
+coding =set()
+robotics = set()
 while True:
 
     print("\nMenu")
@@ -43,7 +45,7 @@ while True:
     print("10. Exit")
 
     choice = int(input("Enter choice: "))
-
+    
     if choice == 1:
         student = input("Enter Student ID: ")
         coding.add(student)

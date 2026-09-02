@@ -18,8 +18,11 @@ for i in range(len(s)):
 
     if len(new) == len(sub):
         break
+if new == sub :
+    print("True")
+else:
+    print("False")
 
-print(new)
             
         
         

@@ -52,56 +52,29 @@ B101 Python Basics John 450
 B103 Data Science John 700
 '''
 from collections import namedtuple
+books = namedtuple("field",["book_id", "title", "author", "price"])
+n = int(input("Enter book number: "))
+l = []
 
-book = namedtuple("Book", ["book_id", "title", "author", "price"])
-
-n = int(input("Enter number of books: "))
-
-books = []
-
-# 1. Read book records
 for i in range(n):
-    book_id, title, author, price = input().split()
+    
+    id = int(input("Enter id of book: "))
+    t = input("Enter title of book: ")
+    aut = input("Enter author name: ")
+    pri = int(input("Enter price :"))
+    a = books(id,t,aut,pri)
+    l.append(a)
+for i in l:
+    print(i.book_id ,"And",i.title,"And",i.author,"And",i.price)
+expenc = l[0].price
+for i in l:
+    if expenc < i.price:
+        expenc = i.price
+print("Expencve: ",expenc)
+author_name = input("Enter author name")
+for i in l:
+    if i.author == author_name:
+        print("Book name : ",i.title)
+    
+    
 
-    b = book(book_id, title, author, int(price))
-    books.append(b)
-
-
-# 2. Display all book details
-print("\nAll Books:")
-
-for b in books:
-    print(b.book_id, b.title, b.author, b.price)
-
-
-# 3. Find most expensive book
-expensive = books[0]
-
-for b in books:
-    if b.price > expensive.price:
-        expensive = b
-
-print("\nMost Expensive Book:")
-print(expensive.book_id, expensive.title, expensive.author, expensive.price)
-
-
-# 4. Calculate average price
-total = 0
-
-for b in books:
-    total += b.price
-
-average = total / n
-
-print("\nAverage Book Price:")
-print(average)
-
-
-# 5. Search books by author
-search_author = input("\nEnter Author Name: ")
-
-print("\nBooks Written By", search_author + ":")
-
-for b in books:
-    if b.author == search_author:
-        print(b.book_id, b.title, b.author, b.price)

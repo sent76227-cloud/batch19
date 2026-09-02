@@ -38,7 +38,7 @@ Missing Number = 3
 ---'''
 l = list(map(int,input("Enter List: ").split()))
 new  = []
-for i in range(1,len(l)+2):
+for i in range(l[0],len(l)+l[0]+1):
     new.append(i)
 
 

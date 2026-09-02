@@ -200,13 +200,6 @@ while True:
                 
             print(colom)
             print(count)
-            
-                
-                            
-                            
-                            
-                    
-                    
         case 4:
             break
 
