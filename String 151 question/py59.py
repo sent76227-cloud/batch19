@@ -13,7 +13,7 @@ for i in range(len(s)):
     if n-1 > i:
         last = last + s[i]
     else:
-        reg = reg +s[i]
+        reg = reg +s[i] 
 print(last)
 print(reg)
 merge = reg + last

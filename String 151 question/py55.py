@@ -13,8 +13,7 @@ for i in s:
     else:
         conc =  conc + i
         
-print(value)
-print(conc)
+
 new = ""
 j = 0
 while j < len(value):

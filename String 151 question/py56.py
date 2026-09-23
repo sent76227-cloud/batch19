@@ -2,7 +2,7 @@
 example 
     S = "apple" "eplpa" {wrong example}
     S = "apple" "alppe" {right example}
-     
+
     
 '''
 s= input("Enter string: ")
